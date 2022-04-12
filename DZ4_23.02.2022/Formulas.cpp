@@ -5,26 +5,83 @@ n::n()
 	value = 0;
 }
 
-double n::getvalue() const
+n::n(double val)
+{
+	value = val;
+}
+
+double n::getValue() const
 {
 	return value;
 }
 
-void n::setvalue(double v)
+void n::setValue(double val)
 {
-	value = v;
+	this->value = val;
 }
 
-double n::menshe(int, int)
+void n::menshe(int a, int b)
 {
-	return 0.0;
+	if (a != 0 && b != 0)
+	{
+		setValue(a * a + (a - b) / (sin(a * b)));
+	}
+	else
+	{
+		std::cout << "Îøèáêà";
+	}
 }
 
-double n::bolsheravno(int, int)
+void n::bolsheravno(int a, int b)
 {
-	return 0.0;
+	setValue(pow(a - b, (1 / 3)));
 }
 
 n::~n()
+{
+}
+
+m::m()
+{
+}
+
+m::m(double val)
+{
+	value = val;
+}
+
+double m::getValue() const
+{
+	return value;
+}
+
+void m::setValue(double val)
+{
+	value = val;
+}
+
+void m::menshe(int n, int a, int b)
+{
+	if (b != 0 && (sin(a) * sin(a) - cos(n)) >= 0)
+	{
+		setValue((n + a) / (-b) + sqrt(sin(a) * sin(a) - cos(n)));
+	}
+	else
+	{
+		std::cout << "Îøèáêà";
+	}
+}
+
+void m::bolshe(int n, int a, int b)
+{
+	setValue(b*b*b+n*a*a);
+}
+
+void m::ravno(int n, int a, int b)
+{
+	setValue(b*b+tan(n*a));
+}
+
+m::~m()
 {
 }

@@ -8,6 +8,7 @@ int main()
 	n* N = new n;
 	m* M = new m;
 
+	delete M;
 	delete N;
 	return 0;
 }

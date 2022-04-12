@@ -9,7 +9,7 @@ private:
 public:
 
 	n();
-	n(double);
+	void (*choise(int, int))(int, int);
 	double getValue() const;
 	void setValue(double);
 	void menshe(int, int);
@@ -23,7 +23,6 @@ private:
 	double value;
 public:
 	m();
-	m(double);
 	double getValue() const;
 	void setValue(double);
 	void menshe(int, int, int);

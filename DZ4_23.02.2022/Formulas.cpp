@@ -5,10 +5,20 @@ n::n()
 	value = 0;
 }
 
-n::n(double val)
+void(*n::choise(int a, int b))(int, int)
 {
-	value = val;
+	void (*act[])(int,int) = { bolsheravno, menshe};
+	if (1)
+	{
+		return act[0];
+	}
+	else
+	{
+		return act[1];
+	}
 }
+
+
 
 double n::getValue() const
 {
@@ -43,11 +53,7 @@ n::~n()
 
 m::m()
 {
-}
-
-m::m(double val)
-{
-	value = val;
+	value = 0;
 }
 
 double m::getValue() const

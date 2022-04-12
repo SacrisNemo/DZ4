@@ -2,5 +2,8 @@
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	double a = 4.8;
+	double b = -7.9;
+
+
 }

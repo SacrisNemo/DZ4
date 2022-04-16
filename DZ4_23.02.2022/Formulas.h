@@ -9,11 +9,11 @@ private:
 public:
 
 	n();
-	void (*choise(int, int))(int, int);
+	void choise(double, double);
 	double getValue() const;
 	void setValue(double);
-	void menshe(int, int);
-	void bolsheravno(int, int);
+	void menshe(double, double);
+	void bolsheravno(double, double);
 	~n();
 };
 
@@ -25,9 +25,10 @@ public:
 	m();
 	double getValue() const;
 	void setValue(double);
-	void menshe(int, int, int);
-	void bolshe(int, int, int);
-	void ravno(int, int, int);
+	void choise(double, double, double);
+	void menshe(double, double, double);
+	void bolshe(double, double, double);
+	void ravno(double, double, double);
 	~m();
 };
 

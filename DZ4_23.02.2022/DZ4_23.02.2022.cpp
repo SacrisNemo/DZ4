@@ -7,7 +7,8 @@ int main()
 	double b = -7.9;
 	n* N = new n;
 	m* M = new m;
-
+	N->choise(a,b);
+	M->choise(N->getValue(), a, b);
 	delete M;
 	delete N;
 	return 0;
